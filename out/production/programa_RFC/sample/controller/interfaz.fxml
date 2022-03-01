@@ -1,8 +1,72 @@
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.layout.GridPane?>
+<?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
-<GridPane fx:controller="sample.controller.Controller"
-          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
-</GridPane>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="ventana1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="403.0" prefWidth="604.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.Controller">
+   <children>
+      <ImageView fitHeight="405.0" fitWidth="604.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/vista1.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txtnombre" layoutX="195.0" layoutY="148.0" prefHeight="25.0" prefWidth="249.0" promptText="Ejem. ELSA PATO" />
+      <TextField fx:id="txtapellidoP" layoutX="195.0" layoutY="213.0" prefHeight="25.0" prefWidth="249.0" promptText="Ejem. LOPEZ" />
+      <TextField fx:id="txtapellidM" layoutX="195.0" layoutY="281.0" prefHeight="25.0" prefWidth="249.0" promptText="Ejem. CASTE" />
+      <TextField fx:id="txtfecha" layoutX="195.0" layoutY="350.0" prefHeight="25.0" prefWidth="184.0" promptText="EJjem. 01/02/22" />
+      <Button layoutX="476.0" layoutY="346.0" mnemonicParsing="false" onAction="#continuar" prefHeight="34.0" prefWidth="91.0" style="-fx-background-color: cornflowerblue; -fx-border-color: royalblue; -fx-background-radius: 5px; -fx-border-radius: 5px;" text="Continuar" textFill="WHITE">
+         <font>
+            <Font name="Lucida Sans Typewriter Regular" size="13.0" />
+         </font>
+      </Button>
+      <Button layoutX="34.0" layoutY="346.0" mnemonicParsing="false" onAction="#salir" prefHeight="28.0" prefWidth="48.0" style="-fx-background-color: tomato; -fx-background-radius: 5px; -fx-border-radius: 5px; -fx-border-color: red;" text="Salir" textFill="WHITE">
+         <font>
+            <Font name="Lucida Sans Unicode" size="13.0" />
+         </font>
+      </Button>
+      <AnchorPane fx:id="ventana2" prefHeight="403.0" prefWidth="604.0" style="-fx-background-color: white;" visible="false">
+         <children>
+            <ImageView fx:id="img" fitHeight="403.0" fitWidth="604.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/vista2.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="txtRFC" layoutX="63.0" layoutY="310.0" opacity="0.94" prefHeight="34.0" prefWidth="184.0" promptText="Ejem.. HEAK981125">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+            <Label fx:id="lblaPaterno" layoutX="135.0" layoutY="116.0" prefHeight="17.0" prefWidth="79.0" text="Label">
+               <font>
+                  <Font name="Arial Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblaMaterno" layoutX="145.0" layoutY="166.0" prefHeight="17.0" prefWidth="79.0" text="Label">
+               <font>
+                  <Font name="Arial Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblfecha" layoutX="145.0" layoutY="211.0" prefHeight="17.0" prefWidth="79.0" text="Label">
+               <font>
+                  <Font name="Arial Bold" size="13.0" />
+               </font>
+            </Label>
+            <Button layoutX="99.0" layoutY="361.0" mnemonicParsing="false" onAction="#verificar" style="-fx-background-color: cornflowerblue; -fx-background-radius: 5px; -fx-border-radius: 5px; -fx-border-color: royalblue;" text="Verificar" textFill="WHITE">
+               <font>
+                  <Font name="Lucida Sans Typewriter Regular" size="13.0" />
+               </font>
+            </Button>
+            <Label fx:id="lblNombre" layoutX="128.0" layoutY="71.0" prefHeight="17.0" prefWidth="79.0" text="Label">
+               <font>
+                  <Font name="Arial Bold" size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

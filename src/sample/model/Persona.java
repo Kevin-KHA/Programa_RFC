@@ -21,8 +21,6 @@ public class Persona {
         this.rfc = new SimpleStringProperty(rfc);
     }
 
-
-
     public String getNombre() {
         return nombre.get();
     }
