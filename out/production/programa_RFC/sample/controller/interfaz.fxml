@@ -15,10 +15,10 @@
             <Image url="@../image/vista1.png" />
          </image>
       </ImageView>
-      <TextField fx:id="txtnombre" layoutX="195.0" layoutY="148.0" prefHeight="25.0" prefWidth="249.0" promptText="Ejem. ELSA PATO" />
-      <TextField fx:id="txtapellidoP" layoutX="195.0" layoutY="213.0" prefHeight="25.0" prefWidth="249.0" promptText="Ejem. LOPEZ" />
-      <TextField fx:id="txtapellidM" layoutX="195.0" layoutY="281.0" prefHeight="25.0" prefWidth="249.0" promptText="Ejem. CASTE" />
-      <TextField fx:id="txtfecha" layoutX="195.0" layoutY="350.0" prefHeight="25.0" prefWidth="184.0" promptText="EJjem. 01/02/22" />
+      <TextField fx:id="txtnombre" layoutX="195.0" layoutY="148.0" prefHeight="25.0" prefWidth="249.0" promptText="Ejem. ALMA" />
+      <TextField fx:id="txtapellidoP" layoutX="195.0" layoutY="213.0" prefHeight="25.0" prefWidth="249.0" promptText="Ejem. MARCELA" />
+      <TextField fx:id="txtapellidM" layoutX="195.0" layoutY="281.0" prefHeight="25.0" prefWidth="249.0" promptText="Ejem. SILVA" />
+      <TextField fx:id="txtfecha" layoutX="195.0" layoutY="350.0" prefHeight="25.0" prefWidth="184.0" promptText="Ejem. 01/02/22" />
       <Button layoutX="476.0" layoutY="346.0" mnemonicParsing="false" onAction="#continuar" prefHeight="34.0" prefWidth="91.0" style="-fx-background-color: cornflowerblue; -fx-border-color: royalblue; -fx-background-radius: 5px; -fx-border-radius: 5px;" text="Continuar" textFill="WHITE">
          <font>
             <Font name="Lucida Sans Typewriter Regular" size="13.0" />
@@ -56,7 +56,7 @@
                   <Font name="Arial Bold" size="13.0" />
                </font>
             </Label>
-            <Button layoutX="99.0" layoutY="361.0" mnemonicParsing="false" onAction="#verificar" style="-fx-background-color: cornflowerblue; -fx-background-radius: 5px; -fx-border-radius: 5px; -fx-border-color: royalblue;" text="Verificar" textFill="WHITE">
+            <Button layoutX="155.0" layoutY="361.0" mnemonicParsing="false" onAction="#verificar" style="-fx-background-color: cornflowerblue; -fx-background-radius: 5px; -fx-border-radius: 5px; -fx-border-color: royalblue;" text="Verificar" textFill="WHITE">
                <font>
                   <Font name="Lucida Sans Typewriter Regular" size="13.0" />
                </font>
@@ -66,6 +66,11 @@
                   <Font name="Arial Bold" size="13.0" />
                </font>
             </Label>
+            <Button layoutX="63.0" layoutY="361.0" mnemonicParsing="false" onAction="#salir" prefHeight="17.0" prefWidth="42.0" style="-fx-background-color: tomato; -fx-background-radius: 5px; -fx-border-radius: 5px; -fx-border-color: red;" text="Salir" textFill="WHITE">
+               <font>
+                  <Font name="Lucida Sans Unicode" size="11.0" />
+               </font>
+            </Button>
          </children>
       </AnchorPane>
    </children>

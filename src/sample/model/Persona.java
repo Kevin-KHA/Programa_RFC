@@ -62,5 +62,4 @@ public class Persona {
     public void setRfc(String rfc) {
         this.rfc.set(rfc);
     }
-
 }
